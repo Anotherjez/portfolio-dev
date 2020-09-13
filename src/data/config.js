@@ -1,6 +1,6 @@
 module.exports = {
   defaultTitle: 'Jesus Mercado',
-  logo: 'https://anotherjez.gtsb.io/icons/favicon.ico',
+  logo: 'https://anotherjez.gtsb.io/favicon/favicon.ico',
   author: 'Jesus Mercado',
   url: 'https://anotherjez.gtsb.io/',
   legalName: 'Jesus Mercado',
