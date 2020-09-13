@@ -2,25 +2,31 @@
   {
     "id": 0,
     "name": "Telegram",
-    "link": "https://t.me/smakosh",
+    "link": "https://t.me/anotherjez",
     "icon": "/icons/telegram.svg"
   },
   {
     "id": 1,
     "name": "Github",
     "link": "https://github.com/smakosh",
-    "icon": "/icons/github.svg"
+    "icon": "assets/icons/github.svg"
   },
   {
     "id": 2,
-    "name": "StackOverflow",
-    "link": "https://stackoverflow.com/users/story/7396786",
-    "icon": "/icons/stackoverflow.svg"
+    "name": "Gmail",
+    "link": "mailto:anotherjez2@gmail.com",
+    "icon": "assets/icons/gmail.svg"
   },
   {
     "id": 3,
     "name": "Twitter",
-    "link": "https://twitter.com/smakosh",
-    "icon": "/icons/twitter.svg"
+    "link": "https://twitter.com/anotherjez",
+    "icon": "assets/icons/twitter.svg"
+  },
+  {
+    "id": 4,
+    "name": "Instagram",
+    "link": "https://instagram.com/anotherjez",
+    "icon": "assets/icons/instagram.svg"
   }
 ]
