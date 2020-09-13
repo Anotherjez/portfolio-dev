@@ -15,10 +15,7 @@ export const Skills = () => {
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
-          <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry’s standard dummy.
-          </p>
+          <p>Un desarrollador Fullstack con experecia en distintas tecnologias, CI/CD, AWS, Azure y demas.</p>
         </Details>
       </SkillsWrapper>
     </Wrapper>
