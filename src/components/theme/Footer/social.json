@@ -9,24 +9,24 @@
     "id": 1,
     "name": "Github",
     "link": "https://github.com/smakosh",
-    "icon": "assets/icons/github.svg"
+    "icon": "/icons/github.svg"
   },
   {
     "id": 2,
     "name": "Gmail",
     "link": "mailto:anotherjez2@gmail.com",
-    "icon": "assets/icons/gmail.svg"
+    "icon": "/icons/gmail.svg"
   },
   {
     "id": 3,
     "name": "Twitter",
     "link": "https://twitter.com/anotherjez",
-    "icon": "assets/icons/twitter.svg"
+    "icon": "/icons/twitter.svg"
   },
   {
     "id": 4,
     "name": "Instagram",
     "link": "https://instagram.com/anotherjez",
-    "icon": "assets/icons/instagram.svg"
+    "icon": "/icons/instagram.svg"
   }
 ]
