@@ -98,3 +98,55 @@ export const Item = styled.div`
 export const Content = styled.div`
   padding: 1rem 0;
 `;
+
+export const Porcentaje = styled.div`
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  background: #222;
+  z-index: 1000;
+
+  svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+  }
+
+  svg circle {
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+  }
+
+  svg circle:nth-child(2) {
+    stroke-dasharray: 220;
+    stroke-dashoffset: 220;
+    stroke: #00ff43;
+  }
+`;
+
+export const Number = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  h2 {
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: 0.5s;
+  }
+`;

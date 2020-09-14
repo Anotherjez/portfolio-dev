@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, Card } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, Grid, Item, Content } from './styles';
+import { Wrapper, SkillsWrapper, Details, Thumbnail, Grid, Item, Content, Porcentaje, Number } from './styles';
 import skills from './skills.json';
 
 export const Skills = () => {
@@ -10,19 +10,33 @@ export const Skills = () => {
 
   return (
     <Wrapper id="about">
-      <h1>Skills</h1>
-      <Grid>
-        {skills.map(({ id, skillname, porcentaje }) => (
-          <Item key={id} as="div" theme={theme}>
-            <Card theme={theme}>
-              <Content>
-                <h4>{skillname}</h4>
-                <p>{porcentaje}%</p>
-              </Content>
-            </Card>
-          </Item>
-        ))}
-      </Grid>
+      <Wrapper as={Container} id="skills">
+        <h1>Skills</h1>
+        <Grid>
+          {skills.map(({ id, skillname, porcentaje }) => (
+            <Item key={id} as="div" theme={theme}>
+              <Card theme={theme}>
+                <Content>
+                  <Porcentaje>
+                    <svg>
+                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle cx="70" cy="70" r="70"></circle>
+                    </svg>
+                  </Porcentaje>
+                  <Number>
+                    <h2>
+                      {porcentaje}
+                      <span>%</span>
+                    </h2>
+                  </Number>
+                  <h2>{skillname}</h2>
+                </Content>
+              </Card>
+            </Item>
+          ))}
+        </Grid>
+      </Wrapper>
+
       <SkillsWrapper as={Container}>
         <Thumbnail>
           <img src={dev} alt="I’m Jesus and I’m a Fullstack developer!" />
