@@ -2,7 +2,18 @@ import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
 import { Container, SkillCard } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
-import { Wrapper, SkillsWrapper, Details, Thumbnail, Grid, Item, Content, Porcentaje, Number } from './styles';
+import {
+  Wrapper,
+  SkillsWrapper,
+  AboutWrapper,
+  Details,
+  Thumbnail,
+  Grid,
+  Item,
+  Content,
+  Porcentaje,
+  Number,
+} from './styles';
 import skills from './skills.json';
 
 export const Skills = () => {
@@ -10,8 +21,8 @@ export const Skills = () => {
 
   return (
     <Wrapper id="about">
-      <Wrapper as={Container} id="skills">
-        <h1>Skills</h1>
+      <SkillsWrapper as={Container} id="skills">
+        <h2>Skills</h2>
         <Grid>
           {skills.map(({ id, skillname, porcentaje }) => (
             <Item key={id} as="div" theme={theme}>
@@ -40,17 +51,17 @@ export const Skills = () => {
             </Item>
           ))}
         </Grid>
-      </Wrapper>
+      </SkillsWrapper>
 
-      <SkillsWrapper as={Container}>
+      <AboutWrapper as={Container}>
         <Thumbnail>
           <img src={dev} alt="I’m Jesus and I’m a Fullstack developer!" />
         </Thumbnail>
         <Details theme={theme}>
           <h1>More about me</h1>
-          <p>Un desarrollador Fullstack con experecia en distintas tecnologias, CI/CD, AWS, Azure y demas.</p>
+          <p>A Fullstack developer with experience in different technologies, CI / CD, AWS, Azure and others.</p>
         </Details>
-      </SkillsWrapper>
+      </AboutWrapper>
     </Wrapper>
   );
 };

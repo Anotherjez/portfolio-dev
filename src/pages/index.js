@@ -8,6 +8,5 @@ export default () => (
     <Intro />
     <Projects />
     <Skills />
-    <Contact />
   </Layout>
 );
