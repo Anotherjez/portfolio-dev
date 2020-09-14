@@ -131,7 +131,7 @@ export const Porcentaje = styled.div`
 
   svg circle:nth-child(2) {
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * ${porcentaje}) / 100);
+    stroke-dashoffset: calc(440 - (440 * ${porcentajes}) / 100);
     stroke: #00ff43;
   }
 `;
@@ -148,7 +148,7 @@ export const Number = styled.div`
   border-radius: 50%;
 
   h2 {
-    color: #777;
+    color: ${({ theme }) => (theme === 'light' ? '#222' : '#777')};
     font-weight: 700;
     font-size: 40px;
     transition: 0.5s;
@@ -156,6 +156,6 @@ export const Number = styled.div`
 
   h2 span {
     font-size: 24px;
-    color: #777;
+    color: ${({ theme }) => (theme === 'light' ? '#222' : '#777')};
   }
 `;
