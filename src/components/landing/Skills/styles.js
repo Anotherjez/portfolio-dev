@@ -99,7 +99,14 @@ export const Content = styled.div`
   padding: 1rem 0;
 
   h2 {
-    color: #fff;
+    color: ${({ theme }) => (theme === 'light' ? '#222' : '#fff')};
+    position: relative;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transfrom: uppercase;
+    transition: 0.5s;
   }
 `;
 
@@ -137,7 +144,7 @@ export const Porcentaje = styled.div`
 
 export const Number = styled.div`
   position: absolute;
-  top: 0;
+  top: 10;
   left: 0;
   width: 100%;
   height: 100%;

@@ -16,7 +16,7 @@ export const Skills = () => {
           {skills.map(({ id, skillname, porcentaje }) => (
             <Item key={id} as="div" theme={theme}>
               <Card theme={theme}>
-                <Content>
+                <Content theme={theme}>
                   <Porcentaje theme={theme} porcentajes={40}>
                     <svg>
                       <circle cx="70" cy="70" r="70"></circle>
