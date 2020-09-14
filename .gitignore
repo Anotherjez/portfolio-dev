@@ -1,6 +1,6 @@
 .github/
 .vscode/
-
+.env.development.template
 # Logs
 logs
 *.log

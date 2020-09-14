@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeContext } from 'providers/ThemeProvider';
-import { Container, Card } from 'components/common';
+import { Container, SkillCard } from 'components/common';
 import dev from 'assets/illustrations/skills.svg';
 import { Wrapper, SkillsWrapper, Details, Thumbnail, Grid, Item, Content, Porcentaje, Number } from './styles';
 import skills from './skills.json';
@@ -15,7 +15,7 @@ export const Skills = () => {
         <Grid>
           {skills.map(({ id, skillname, porcentaje }) => (
             <Item key={id} as="div" theme={theme}>
-              <Card theme={theme}>
+              <SkillCard theme={theme}>
                 <Content theme={theme}>
                   <Porcentaje theme={theme} porcentajes={40}>
                     <svg>
@@ -28,15 +28,15 @@ export const Skills = () => {
                       ></circle>
                     </svg>
                     <Number theme={theme}>
-                      <h2>
+                      <h3>
                         {porcentaje}
                         <span>%</span>
-                      </h2>
+                      </h3>
                     </Number>
                   </Porcentaje>
                   <h2>{skillname}</h2>
                 </Content>
-              </Card>
+              </SkillCard>
             </Item>
           ))}
         </Grid>

@@ -81,7 +81,7 @@ export const Grid = styled.div`
 `;
 
 export const Item = styled.div`
-  width: 100%;
+  width: 280px;
   height: 100%;
   overflow: hidden;
   box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.11);
@@ -130,7 +130,7 @@ export const Porcentaje = styled.div`
     width: 100%;
     height: 100%;
     fill: none;
-    stroke: #191919;
+    stroke: ${({ theme }) => (theme === 'light' ? '#eeeeee' : '#191919')};
     stroke-width: 10;
     stroke-linecap: round;
     transform: translate(5px, 5px);
@@ -144,7 +144,7 @@ export const Porcentaje = styled.div`
 
 export const Number = styled.div`
   position: absolute;
-  top: 1;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -152,15 +152,16 @@ export const Number = styled.div`
   justify-content: center;
   align-items: center;
   border-radius: 50%;
+  margin-top: 10px;
 
-  h2 {
+  h3 {
     color: ${({ theme }) => (theme === 'light' ? '#222' : '#777')};
     font-weight: 700;
     font-size: 40px;
     transition: 0.5s;
   }
 
-  h2 span {
+  h3 span {
     font-size: 24px;
     color: ${({ theme }) => (theme === 'light' ? '#222' : '#777')};
   }
