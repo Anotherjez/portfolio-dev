@@ -131,7 +131,6 @@ export const Porcentaje = styled.div`
 
   svg circle:nth-child(2) {
     stroke-dasharray: 440;
-    stroke-dashoffset: calc(440 - (440 * ${porcentajes}) / 100);
     stroke: #00ff43;
   }
 `;

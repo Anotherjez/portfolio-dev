@@ -7,7 +7,6 @@ import skills from './skills.json';
 
 export const Skills = () => {
   const { theme } = useContext(ThemeContext);
-  const myPorcentajes = [40, 60, 65, 30, 40, 10, 70, 45, 50, 30, 30, 15];
 
   return (
     <Wrapper id="about">
@@ -18,10 +17,15 @@ export const Skills = () => {
             <Item key={id} as="div" theme={theme}>
               <Card theme={theme}>
                 <Content>
-                  <Porcentaje theme={theme} porcentajes={myPorcentajes[id]}>
+                  <Porcentaje theme={theme} porcentajes={40}>
                     <svg>
                       <circle cx="70" cy="70" r="70"></circle>
-                      <circle cx="70" cy="70" r="70"></circle>
+                      <circle
+                        cx="70"
+                        cy="70"
+                        r="70"
+                        style={{ strokeDashoffset: `calc(440 - (440 * ${porcentaje}) / 100)` }}
+                      ></circle>
                     </svg>
                     <Number theme={theme}>
                       <h2>
