@@ -1,0 +1,62 @@
+[
+    {
+        "id": 0,
+        "skillname": "C# - Asp .NET",
+        "porcentaje": 40
+    },
+    {
+        "id": 1,
+        "skillname": "Javascript",
+        "porcentaje": 60
+    },
+    {
+        "id": 2,
+        "skillname": "Ruby | Ruby on Rails",
+        "porcentaje": 65
+    },
+    {
+        "id": 3,
+        "skillname": "Python",
+        "porcentaje": 30
+    },
+    {
+        "id": 4,
+        "skillname": "PHP",
+        "porcentaje": 40
+    },
+    {
+        "id": 5,
+        "skillname": "React",
+        "porcentaje": 10
+    },
+    {
+        "id": 6,
+        "skillname": "HTML5/CSS3",
+        "porcentaje": 70
+    },
+    {
+        "id": 7,
+        "skillname": "MySQL",
+        "porcentaje": 45
+    },
+    {
+        "id": 8,
+        "skillname": "Postgresql",
+        "porcentaje": 50
+    },
+    {
+        "id": 9,
+        "skillname": "AWS",
+        "porcentaje": 30
+    },
+    {
+        "id": 10,
+        "skillname": "Azure",
+        "porcentaje": 30
+    },
+    {
+        "id": 11,
+        "skillname": "Jenkins",
+        "porcentaje": 15
+    }
+]
