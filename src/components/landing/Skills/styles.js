@@ -105,7 +105,7 @@ export const Porcentaje = styled.div`
   height: 150px;
   border-radius: 50%;
   box-shadow: inset 0 0 50px #000;
-  background: #222;
+  background: ${({ theme }) => (theme === 'light' ? '#F9F9F9' : '#222')};
   z-index: 1000;
 
   svg {
