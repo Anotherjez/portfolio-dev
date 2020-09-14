@@ -22,13 +22,13 @@ export const Skills = () => {
                       <circle cx="70" cy="70" r="70"></circle>
                       <circle cx="70" cy="70" r="70"></circle>
                     </svg>
+                    <Number>
+                      <h2>
+                        {porcentaje}
+                        <span>%</span>
+                      </h2>
+                    </Number>
                   </Porcentaje>
-                  <Number>
-                    <h2>
-                      {porcentaje}
-                      <span>%</span>
-                    </h2>
-                  </Number>
                   <h2>{skillname}</h2>
                 </Content>
               </Card>

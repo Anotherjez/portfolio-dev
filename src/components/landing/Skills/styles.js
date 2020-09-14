@@ -97,6 +97,10 @@ export const Item = styled.div`
 
 export const Content = styled.div`
   padding: 1rem 0;
+
+  h2 {
+    color: #fff;
+  }
 `;
 
 export const Porcentaje = styled.div`
@@ -148,5 +152,10 @@ export const Number = styled.div`
     font-weight: 700;
     font-size: 40px;
     transition: 0.5s;
+  }
+
+  h2 span {
+    font-size: 24px;
+    color: #777;
   }
 `;
