@@ -17,7 +17,7 @@ export const Skills = () => {
             <Item key={id} as="div" theme={theme}>
               <Card theme={theme}>
                 <Content>
-                  <Porcentaje>
+                  <Porcentaje theme={theme} porcentaje={porcentaje}>
                     <svg>
                       <circle cx="70" cy="70" r="70"></circle>
                       <circle cx="70" cy="70" r="70"></circle>

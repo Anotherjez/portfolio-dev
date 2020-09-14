@@ -130,8 +130,8 @@ export const Porcentaje = styled.div`
   }
 
   svg circle:nth-child(2) {
-    stroke-dasharray: 220;
-    stroke-dashoffset: 220;
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * ${porcentaje}) / 100);
     stroke: #00ff43;
   }
 `;
