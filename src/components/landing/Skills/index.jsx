@@ -20,7 +20,7 @@ export const Skills = () => {
   const { theme } = useContext(ThemeContext);
 
   return (
-    <Wrapper id="about">
+    <Wrapper>
       <SkillsWrapper as={Container} id="skills">
         <h2>Skills</h2>
         <Grid>
@@ -53,7 +53,7 @@ export const Skills = () => {
         </Grid>
       </SkillsWrapper>
 
-      <AboutWrapper as={Container}>
+      <AboutWrapper as={Container} id="about">
         <Thumbnail>
           <img src={dev} alt="I’m Jesus and I’m a Fullstack developer!" />
         </Thumbnail>
